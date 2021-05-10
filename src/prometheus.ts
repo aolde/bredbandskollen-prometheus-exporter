@@ -24,14 +24,14 @@ export function getRegistryWithMetrics(result: SpeedResult) {
     }).set({}, result.latency);
 
     new client.Gauge({
-        name: "bredbandskollen_download_ms",
-        help: "Download speed in megaits per second",
+        name: "bredbandskollen_download_mbps",
+        help: "Download speed in megabits per second",
         labelNames: labelNames,
         registers: [registry],
     }).set({}, result.download);
     new client.Gauge({
         name: "bredbandskollen_upload_mbps",
-        help: "Upload speed in megaits per second",
+        help: "Upload speed in megabits per second",
         labelNames: labelNames,
         registers: [registry],
     }).set({}, result.upload);
