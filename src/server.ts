@@ -18,9 +18,12 @@ server.get("/metrics", async (request, reply) => {
     return await registry.metrics();
 });
 
+const address = process.env.HTTP_ADDRESS || "127.0.0.1";
+const port = process.env.HTTP_PORT || 3000;
+
 const start = async () => {
     try {
-        await server.listen(process.env.PORT || 3000);
+        await server.listen(port, address);
     } catch (err) {
         server.log.error(err);
         process.exit(1);
