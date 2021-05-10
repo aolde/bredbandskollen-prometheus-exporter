@@ -30,7 +30,12 @@ export async function speedTest({
         }
     }
 
-    const [latency, download, upload, server] = rawTestResult.split(" ", 4);
+    const [latency, download, upload, measurementId] = rawTestResult.split(
+        " ",
+        4
+    );
+    // measurement id format seems to be "<server>0<id>"
+    const server = measurementId.substring(0, measurementId.indexOf("0"));
 
     logger.info(
         "parsed result",
