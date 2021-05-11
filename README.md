@@ -30,14 +30,9 @@ curl http://localhost:3001/metrics
 
 ## Helm
 
-```
+```console
 helm repo add aolde https://aolde.github.com/helm
-```
-
-```
 helm install -f values.yaml bbk-exporter aolde/bredbandskollen-prometheus-exporter
 ```
 
-## Grafana
-
-TODO
+See more info in the [helm chart](https://github.com/aolde/helm/tree/main/charts/bredbandskollen-prometheus-exporter).
