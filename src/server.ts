@@ -12,6 +12,10 @@ server.get("/", async (request, reply) => {
     reply.send(getIndexPage());
 });
 
+server.get("/health", (request, reply) => {
+    reply.send("ok");
+});
+
 server.get("/metrics", async (request, reply) => {
     const result = await speedTest({ useMock: false });
     const registry = getRegistryWithMetrics(result);
