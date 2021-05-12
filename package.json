@@ -1,15 +1,21 @@
 {
   "name": "bredbandskollen-prometheus-exporter",
-  "version": "1.0.1",
+  "version": "0.0.0-development",
   "description": "Export Internet speed tests from Bredbandskollen to Prometheus",
   "main": "index.js",
+  "keywords": [
+    "prometheus-exporter",
+    "prometheus",
+    "bredbandskollen"
+  ],
   "repository": "git@github.com:aolde/bredbandskollen-prometheus-exporter.git",
   "author": "Andreas Oldeskog <142856+aolde@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
     "start": "nodemon dist/server.js",
     "dev": "tsc --watch",
-    "build": "tsc"
+    "build": "tsc",
+    "release": "semantic-release"
   },
   "dependencies": {
     "execa": "^5.0.0",
@@ -22,7 +28,8 @@
   "devDependencies": {
     "@types/node": "15.0.2",
     "nodemon": "^2.0.7",
-    "typescript": "^4.2.4"
+    "typescript": "^4.2.4",
+    "semantic-release": "^17.4.2"
   },
   "prettier": {
     "semi": true,
@@ -30,5 +37,10 @@
     "singleQuote": false,
     "bracketSpacing": true,
     "trailingComma": "es5"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
   }
 }
