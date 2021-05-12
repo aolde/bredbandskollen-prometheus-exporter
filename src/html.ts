@@ -1,5 +1,5 @@
 export function getIndexPage() {
-    return `
+  return `
   <html>
   <head>
     <title>bredbandskollen-prometheus-exporter</title>
