@@ -2,8 +2,6 @@ import execa from "execa";
 import logdown from "logdown";
 
 const logger = logdown("bbk-cli");
-logger.state.isEnabled = true;
-
 const CLI_NAME = "bbk_cli";
 
 export async function speedTest({
