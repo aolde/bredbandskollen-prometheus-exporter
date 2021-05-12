@@ -1,6 +1,6 @@
 {
   "name": "bredbandskollen-prometheus-exporter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Export Internet speed tests from Bredbandskollen to Prometheus",
   "main": "index.js",
   "repository": "git@github.com:aolde/bredbandskollen-prometheus-exporter.git",
