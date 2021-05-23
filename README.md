@@ -1,4 +1,4 @@
-![Logo bredbandskollen-prometheus-exporter](assets/logo.png)
+![Logo bredbandskollen-prometheus-exporter](https://github.com/aolde/bredbandskollen-prometheus-exporter/blob/main/assets/logo.png?raw=true)
 
 # bredbandskollen-prometheus-exporter
 Export Internet speed tests from Bredbandskollen to Prometheus
